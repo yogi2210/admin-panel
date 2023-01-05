@@ -14,5 +14,16 @@
             padding: 5px 20px;
 
         }
+        .listContainer{
+            box-shadow: 1px 9px 22px 0px rgba(0,0,0,0.45);
+            padding: 20px;
+            margin: 20px;
+
+            .listTitle{
+                font-weight: 500;
+                color: gray;
+                margin-bottom: 15px;
+            }
+        }
     }
 }

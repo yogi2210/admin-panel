@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { productInputs, userInputs } from "./formSource";
 import Home from "./pages/home/Home";
 import List from "./pages/list/List";
 import Login from "./pages/login/Login";
@@ -14,11 +15,11 @@ function App() {
           <Route path="/login" element={<Login/>} />
 
           <Route path="/users" element={<List/>} />
-          <Route path="/users/new" element={<New/>} />
+          <Route path="/users/new" element={<New inputs = {userInputs} title="add new user"/>} />
           <Route path="users/:userId" element={<Single/>} />
 
           <Route path="/products" element={<List/>} />
-          <Route path="/products/new" element={<New/>} />
+          <Route path="/products/new" element={<New inputs={productInputs} title="add new product" />} />
           <Route path="products/:productId" element={<Single/>} />
         </Routes >
       </BrowserRouter>
